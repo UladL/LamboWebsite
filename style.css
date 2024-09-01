@@ -183,7 +183,7 @@ background-color: #f8f8f8;
     margin: 0 auto;
 }
 .gallery-box{
-    padding: 170px 50px;
+    padding: 170px 50px;/
     display: flex;
     justify-content: space-between;
     gap: 20px;
