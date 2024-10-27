@@ -12,6 +12,7 @@ family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap" rel="stylesh
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
@@ -19,13 +20,25 @@ family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap" rel="stylesh
         <a class="logo" href="#">
           <img class="logo__img" src="images/Logo.svg" alt="Logo">
         </a>
-        <div class="menu">
-          <button class="menu__btn">
+        <!--    
+
+TRYING TO MAKE A MENU ( DOESNT WORK PROPERLY)
+
+        <div class="box">
+          <button class="menu__btn button0" aria-expanded="false" aria-controls="list">
             <span></span>
             <span></span>
             <span></span>
           </button>
+          <ul class="menu1" id="list" aria-hidden="true">
+            <li class="menu__item"><a href="#1" class="menu__link" tabindex="-1">HOME</a></li>
+            <li class="menu__item"><a href="#2" class="menu__link" tabindex="-1">INFO</a></li>
+            <li class="menu__item"><a href="#3" class="menu__link" tabindex="-1">COLOR</a></li>
+            <li class="menu__item"><a href="#4" class="menu__link" tabindex="-1">MATERIAL</a></li>
+            <li class="menu__item"><a href="#5" class="menu__link" tabindex="-1">ORDER</a></li>
+          </ul>
         </div>
+-->
       </div>
       <div class="header__content">
         <h1 class="title">URUS</h1>
@@ -109,22 +122,22 @@ family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap" rel="stylesh
   </div>
   <div class="video-div">
     <div class="container">
-      <h1 class="video__text">ВЫБЕРИ МАТЕРИАЛ</h1>
+      <h2 class="video__text">ВЫБЕРИ МАТЕРИАЛ</h2>
       <img src="images/photo.png" class="Photo1">
     </div>
   </div>
   <div class="Lether__Div">
-    <div class="container">
-      <h1 class="Lether__text">premium качество!</h1>
+    <div class="container_leather">
+      <h2 class="Lether__text">premium качество!</h2>
       <div class="lether__flex">
         <form class="lether__form">
           <div>
             <input type="radio" name="race" id="Fun" value="Fun">
-            <label for="Fun">BASIC</label><br>
+            <label for="Fun">BASIC</label>
           </div>
           <div>
             <input type="radio" name="race" id="Half" value="Half">
-            <label for="Half">PREMIUM</label><br>
+            <label for="Half">PREMIUM</label>
           </div>
           <div>
             <input type="radio" name="race" id="Full" value="Full">
@@ -133,9 +146,15 @@ family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap" rel="stylesh
           <button class="button1">Подтвердить</button>
         </form>
         <div class="photos__container">
-          <img src="images/BAD.png" class="photos bad"><br>
-          <img src="images/MID.jpg" class="photos mid"><br>
-          <img src="images/BEST.jpg" class="photos best"><br>
+          <div>
+            <img src="images/BAD.png" class="photos">
+          </div>
+          <div>
+            <img src="images/MID.jpg" class="photos">
+          </div>
+          <div>
+            <img src="images/BEST.jpg" class="photos">
+          </div>
         </div>
       </div>
     </div>
@@ -167,45 +186,26 @@ family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap" rel="stylesh
       </div>
     </div>
   </section>
-
-
-
-
-
-
   <footer class="footer">
-
     <div class="footer_img">
-    <a href="#"><img src="images/instagram.png" class="footer__photos flex"></a>
-    <a href="#"><img src="images/youtube.png" class="footer__photos flex"></a>
-    <a href="#"><img src="images/twitter.png" class="footer__photos flex"></a>
-  </div>
-
+      <a href="#"><img src="images/instagram.png" class="footer__photos flex"></a>
+      <a href="#"><img src="images/youtube.png" class="footer__photos flex"></a>
+      <a href="#"><img src="images/twitter.png" class="footer__photos flex"></a>
+    </div>
     <div class="text22">
-    <a href="#" class="footer__link">HOME</a>
-    <a href="#" class="footer__link">NEWS</a>
-    <a href="#" class="footer__link">ABOUT</a>
-    <a href="#" class="footer__link">TEAM</a>
-  </div>
-    
-  <div class="Copyright">
-  <a href="#" class="Copyright">© COPYRIGHT PROTECTED</a>
-  </div>
-  <div class="Copyright1">
-    <a href="#" class="gg">2024</a>
+      <a href="#" class="footer__link">HOME</a>
+      <a href="#" class="footer__link">NEWS</a>
+      <a href="#" class="footer__link">ABOUT</a>
+      <a href="#" class="footer__link">TEAM</a>
+    </div>
+    <div class="Copyright">
+      <a href="#" class="Copyright">© COPYRIGHT PROTECTED</a>
+    </div>
+    <div class="Copyright1">
+      <a href="#" class="gg">2024</a>
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
   <script src="main.js"></script>
 </body>
+
 </html>
