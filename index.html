@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lambo</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?
@@ -20,36 +21,52 @@ family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap" rel="stylesh
         <a class="logo" href="#">
           <img class="logo__img" src="images/Logo.svg" alt="Logo">
         </a>
-        <!--    
+        
+<button class="header__burger-btn" id="burger">
+  <span></span><span></span><span></span>
+</button>
 
-TRYING TO MAKE A MENU ( DOESNT WORK PROPERLY)
 
-        <div class="box">
-          <button class="menu__btn button0" aria-expanded="false" aria-controls="list">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="menu1" id="list" aria-hidden="true">
-            <li class="menu__item"><a href="#1" class="menu__link" tabindex="-1">HOME</a></li>
-            <li class="menu__item"><a href="#2" class="menu__link" tabindex="-1">INFO</a></li>
-            <li class="menu__item"><a href="#3" class="menu__link" tabindex="-1">COLOR</a></li>
-            <li class="menu__item"><a href="#4" class="menu__link" tabindex="-1">MATERIAL</a></li>
-            <li class="menu__item"><a href="#5" class="menu__link" tabindex="-1">ORDER</a></li>
-          </ul>
-        </div>
--->
+<nav class="menu ">
+  <ul class="menu__list">
+     <li class="menu__item ">
+      <a href="#info" class="menu__link">
+        INFO
+      </a>
+     </li>
+     <li class="menu__item">
+      <a href="#color" class="menu__link scrollto">
+        COLOR
+      </a>
+     </li>
+     <li class="menu__item">
+      <a href="#material" class="menu__link scrollto">
+        MATERIAL
+      </a>
+     </li>
+     <li class="menu__item">
+      <a href="#contacs" class="menu__link scrollto">
+        ORDER
+      </a>
+     </li>
+  </ul>
+</nav>
+
+
+      
+
+
       </div>
       <div class="header__content">
-        <h1 class="title">URUS</h1>
         <img class="header__images" src="images/urus.png" alt="URUS picture">
+        <h1 class="title">URUS</h1>
         <h2 class="sub-title">На Прокат</h2>
       </div>
     </div>
   </header>
   <section class="info">
     <div class="container">
-      <h2 class="info__title">
+      <h2 class="info__title scrollto" href="info" id="info" >
         Lamborghini Urus
       </h2>
       <img src="images/info_car.png" class="info__img">
@@ -96,7 +113,7 @@ TRYING TO MAKE A MENU ( DOESNT WORK PROPERLY)
       </div>
   </section>
   <div class="color">
-    <p class="color__text">ВЫБЕРИ ЦВЕТ</p>
+    <p class="color__text" href="color" id="color">ВЫБЕРИ ЦВЕТ</p>
     <div class="color__gallery">
       <img src="images/galleryPHOTO1.jpg" alt="" class="color__gallery-start">
       <div class="color__gallery-box gallery-box">
@@ -122,7 +139,7 @@ TRYING TO MAKE A MENU ( DOESNT WORK PROPERLY)
   </div>
   <div class="video-div">
     <div class="container">
-      <h2 class="video__text">ВЫБЕРИ МАТЕРИАЛ</h2>
+      <h2 class="video__text" href="material" id="material">ВЫБЕРИ МАТЕРИАЛ</h2>
       <img src="images/photo.png" class="Photo1">
     </div>
   </div>
@@ -161,7 +178,7 @@ TRYING TO MAKE A MENU ( DOESNT WORK PROPERLY)
   </div>
   <section class="contacs">
     <div class="container">
-      <h2 class="contacs__title">
+      <h2 class="contacs__title" href="contacs" id="contacs">
         Забронировать автомобиль Lamborghini Urus
       </h2>
       <div class="contacs__box">
@@ -206,6 +223,7 @@ TRYING TO MAKE A MENU ( DOESNT WORK PROPERLY)
     </div>
   </footer>
   <script src="main.js"></script>
+  <script src="jquery.js"></script>
 </body>
 
 </html>

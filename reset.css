@@ -29,7 +29,10 @@ footer,header,hgroup,menu,nav,section {
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
+    display: flex;
+    background-color: #FF5017;
+    gap: 5px;
 }
 
 blockquote, q {
